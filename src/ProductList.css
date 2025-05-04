@@ -3,7 +3,23 @@ body, h1, ul {
     margin: 0;
     padding: 0;
 }
-
+.cart {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: 50%;  /* Centrado vertical */
+    left: 50%;  /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste preciso del centro */
+    background-color: red;  /* Fondo rojo para el número */
+    color: white;  /* Texto blanco */
+    border-radius: 50%;  /* Redondear el número */
+    padding: 4px 8px;  /* Tamaño del círculo */
+    font-size: 14px;  /* Tamaño de la fuente */
+    font-weight: bold;  /* Peso de la fuente */
+  }
 /* Set a background color */
 body {
     font-family: Arial, sans-serif;
@@ -106,6 +122,11 @@ body {
     transition: background-color 0.3s ease-in-out;
     margin-top: 10px;
 }
+
+.product-button.added {
+    background-color: gray;
+    cursor: not-allowed;
+  }
 
 .product-button:hover {
     background-color: #c0392b;
